@@ -1,0 +1,13 @@
+body {
+    background-color: grey;
+}
+
+.maze {
+    position: relative;
+    left: 33%;
+}
+
+#phrase {
+    position: relative;
+    top: 50%;
+}

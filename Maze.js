@@ -144,7 +144,7 @@ class Cell{
         let x = (this.colNum * this.parentSize) / columns + 1;
         let y = (this.rowNum * this.parentSize) / columns +1;
 
-        ctx.fillStyle= "grey";
+        ctx.fillStyle= "purple";
         ctx.fillRect(x, y, this.parentSize/columns-3, this.parentSize/columns-3);
     }
 
@@ -178,7 +178,7 @@ class Cell{
         let x = (this.colNum * size) / columns;
         let y = (this.rowNum * size) / rows;
 
-        ctx.strokeStyle= "white";
+        ctx.strokeStyle= "grey";
         ctx.fillStyle= "black";
         ctx.lineWidth = 2;
 
@@ -192,7 +192,7 @@ class Cell{
     }
 }
 
-let size= prompt("Choissez la taille du labyrinthe");
-let newMaze= new Maze(500, size, size);
+let size= prompt("Choose the size of the Maze :");
+let newMaze= new Maze(600, size, size);
 newMaze.setup();
 newMaze.draw();
